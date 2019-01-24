@@ -1,0 +1,14 @@
+*KEYWORD
+*TITLE
+Sliding Interface Types 3,4,5,10,13 
+$
+$  LSTC Example
+$
+$
+$  Five different contacts are defined for the same problem.  The only one
+$  active is type 3, surface to surface.  The other four are commented out.
+$  To switch contact types, comment out the active one and remove the comments
+$  from the desired one.  
+$     Espacio ocupado: 512 
+$  Units: mm, s
+$

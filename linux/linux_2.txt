@@ -1,0 +1,22 @@
+                             Comandos utilizados de linux
+
+      1)obtener el tamaño en megas de la carpeta linux
+     du -lh /mnt/c/Users/User/Downloads/linux/linux
+
+------------------------------
+
+        2) con esta linea obtengo los 15 primeros renglones del archivo contact.plates.k y los guardo en newfile.txt
+          sed '1,15d'  /mnt/c/Users/User/Downloads/linux/linux/contact.plates.k > newfile.txt
+---------------------------------
+           3) para poder editar un archivo
+
+   - me ubico en la carpeta que contiene el archivo a editar
+    /mnt/c/Users/User/Downloads/linux/linux
+
+    - pongo mi archivo a la escucha de cualquier edicion
+        nano  /mnt/c/Users/User/Downloads/linux/linux/newfile
+
+     - me muevo por el documento con las flechas y edito donde quiera,
+al terminar doy enter y me alertara sobre el nombre del archivo recien trabajado 
+   vuelvo a dar enter y por ultimo primo ctrl +o para salir del editor
+
