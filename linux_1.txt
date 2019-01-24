@@ -1,0 +1,68 @@
+
+                  comandos utilizados linux--------------------
+
+     1) linea utilizada para descrgar archivo de extension tgz
+  wget -r -A tgz --no-host-directories https://www.dynaexamples.com/examples-manual/ls-dyna_example.tgz 
+----------------------------------
+
+     2) linea  utilizada para renombrar el archivo descargado
+      mv ls-dyna_example.tgz     ejemplos.tgz
+-----------------------------------
+      
+
+
+       3) en esta linea tomo el archivo descargado y lo muevo a linux
+              mv ejemplos.tgz /mnt/c/Users/User/Downloads/linux/
+
+-----------------------------------------
+
+       4) linea utilizada para descomprimir el archivo en una nueva carpeta llamada ejemplos
+             tar -xvf  ejemplos.tgz -C /mnt/c/Users/User/Downloads/linux/ejemplos
+
+-------------------------------------------------------------
+
+        5) esta linea busca los archivos que pesan mas de 100k
+             find  -size +100k
+
+./airbag.deploy.k
+./boundary_prescribed_motion.blow-mold.k
+./contact.n2s-sphere.k
+./contact.projectile.k
+./control_adaptive.cup-draw.k
+./control_contact.hemi-draw.k
+./control_energy.bar-impact.k
+./control_timestep.billet-forge.k
+./damping.tire.k
+./mat_piecewise_linear.plate-shatter.k
+./mat_spring.belted-dummy.k
+./mat_transversely_anisotropic.cup-draw.k
+---------------------------------------------------------
+       6)en esta linea encuentra los archivos que pesan mas de 100 k y los borra
+                 find  -size +100k  -delete
+--------------------------------------------------------------
+
+        7)   esta linea consulta todos los archivos que tienen como nombre constrained y los elimina
+             find -name "constrained*" -delete
+-------------------------------------------------------------
+     
+        8) desde la carpeta linux comprime los archivos de la carpeta ejemplos, dandoles una extencion tar.gz    
+              $ tar -czvf ejemplos_filtrado.tar.gz /mnt/c/Users/User/Downloads/linux/ejemplos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
