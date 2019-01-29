@@ -5,7 +5,6 @@ $text = "";
 while ($num < 1000) {
     if ($num % 2 != 0) {
         $text .= $num . ",";
-
     }
     if ($num == $terminar) {
         break;
@@ -13,4 +12,5 @@ while ($num < 1000) {
     $num++;
 }
 echo trim($text, ",");
+echo "holaaaaaaaa";
 ?>

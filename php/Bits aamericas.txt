@@ -1,0 +1,150 @@
+                 Bits America ejercicios de php
+
+
+   1-  Debes trabajar en la siguientes tareas para empezar:
+        Instalar visual studio code.
+        Instalar los plugins necesarios para codificación de PHP.
+        Instalar mysqlworbench para las bases de datos.
+        Instalar wamp
+
+--------------------
+
+    2- Debemos de aprender git y github por favor revisa este link que es de un curso
+          https://codigofacilito.com/cursos/git  
+         En github por favor crea una cuenta con el correo de bitsamericas y tu user debe ser bitssebastiansanchez
+
+---------------
+
+     3-vamos a empezar con ejercicios de linux, entonces debes en windows ejecutar comandos linux
+        Las tareas que debes ejecutar son:
+      Crear un repisitorio en github que se llame entrenamiento programacion
+      debes crear una carpeta llamada linux
+       Utilizando comandos de linux, realiza las siguientes acciones:
+       Usando wget, descarga el archivo tar.gz de ejemplo desde la URL https://www.dynaexamples.com/examples-manual/ls-dyna_example.tg
+       El archivo se descargará como "ls-dyna_example.tgz". Renombra el archivo a "ejemplos.tgz"
+       Descomprime el contenido del archivo en una nueva carpeta llamada ejemplos (be/php/linux/ejemplos).
+       Utilizando el comando find, localiza todos los archivos dentro de ejemplos que tienen más de 100k (12 archivos).
+       Amplía el comando anterior para eliminar todos los archivos encontrados con el find (más de 100k).
+       Elimina con un único comando todos los archivos que empiezan por 'constrained'.
+       Desde la carpeta linux, comprime la carpeta ejemplos con nombre ejemplos_filtrado.tar.gz.
+       Los ejercicios anteriores debe quedar los comandos utilizados en un archivo llamado linux_1.txt
+       Eso lo subes al repositorio
+
+----------------------------
+
+    4-  Utilizando comandos de linux, realiza las siguientes acciones: 
+
+        - Obtén el tamaño, en megas, ocupado por la carpeta linux.
+        - Obtén las 15 primeras líneas del archivo contact.plates.k y guárdalas en un nuevo archivo llamado newfile.txt
+        - Edita el archivo con uno de los editores propuestos (vim o nano):
+        - Elimina la línea completa Last Modified
+        - Inserta, antes de Units: mm,s, una línea con el siguiente contenido: 
+           $   Espacio ocupado: x M (sustituye la x por el valor obtenido en el primer punto). 
+       - Guarda el archivo con los cambios realizados. 
+      - Mueve el archivo a la carpeta linux.
+         sigue con esos ejercicios y lo mismo para guardar los comnados que utilizaste guardalos en un archivo llamada linux_2.txt
+
+-------------------------------
+
+
+      5- Crea el script  php/php_1.php con las siguientes características: 
+           - Define dos variables numéricas $num1 y $num2 con los valores 41 y 2.1, respectivamente. Realiza con estas variables las operaciones: suma, resta, multiplicación, división y resto de la división. 
+           - Muestra, en modo texto, para cada operación, el resultado obtenido. Por ejemplo: 
+              El resultado de sumar 41 y 2.1 es 43.1.
+              El resultado de restar 41 y 2.1 es 38.9... 
+             - Incluye las etiquetas HTML mínimas para que la página se muestre correctamente (<html>, <head>, <body>, <meta charset...>, etc.). Añade un salto de línea HTML (<br>) después de cada operación.
+
+
+----------------------------------
+
+
+     6-Crea el script php_2.php con las siguientes características: 
+         -Vamos a crear un array donde cada elemento almacena la información de una película. Cade elemento será un array asociativo con las siguientes claves: 
+           identificador
+          titulo
+         direct0r
+         año
+         duracion
+         - Carga el array con al menos 4 películas. 
+       - Sin utilizar estructuras de control o repetición, construye una tabla HTML con los datos del array.
+
+
+------------------------------
+
+     7-Crea el script php_3.php con las siguientes características: 
+          - Utilizando el código de la actividad php_2.php, representa la misma tabla pero haciendo uso de un bucle for. No modifiques el archivo  php_2.php, copia su contenido en el archivo php_3.php para luego modificarlo. 
+          - Una vez finalizado, añade un elemento más al array (una película), y comprueba que también se muestra en la tabla, sin realizar ninguna modificación adicional al código.
+
+
+-----------------------------
+
+8-  Crea el script php_4.php con las siguientes características: 
+          - Crea un bucle while que muestre por pantalla todos los números impares menores de 1000. Los números se mostrarán separados por comas: 1,3,5,7,... 999. Utiliza el operador % para averiguar si un número es par o impar. 
+          - Añade una variable numérica antes del while ($terminar = 356).
+          - Añade al while una condición para que el bucle termine (break) cuando llegue al valor de $terminar. 
+            Comprueba el funcionamiento del bucle con ese valor inicial. Luego cambia el valor a $terminar = 35 y vuelve a comprobar, sin modificar el código, que funcione correctamente. 
+         - En todos los casos, el último valor mostrado no debe terminar en coma: 
+             Incorrecto: 1,3,5,7,
+            Correcto: 1,3,5,7
+-----------------------------------
+
+
+
+       9-Crea el script php_5.php con las siguientes características: 
+             Define 2 variables $cadena1 = "abcdefg" y $cadena2 = "abc". Estos son los valores iniciales, pero puedes/debes cambiarlos para poder probar todos los casos posibles. 
+          - Utilizando cláusulas if/else/ifelse, compara el número de caracteres de cada cadena, indicando, según el resultado: 
+             La cadena1 es mayor que la cadena2 en x caracteres. 
+             La cadena1 es menor que la cadena2 en x caracteres.
+            Las cadenas son iguales y tienen x caracteres. 
+         - Para calcular el número de caracteres de una cadena utiliza la función strlen():
+
+             http://php.net/manual/es/function.strlen.php  
+
+-------------------------------------
+
+
+           10-Crea el script php_5.php con las siguientes características: 
+                  - Define 2 variables $cadena1 = "abcdefg" y $cadena2 = "abc". Estos son los valores iniciales, pero puedes/debes cambiarlos para poder probar todos los casos posibles. 
+                 - Utilizando cláusulas if/else/ifelse, compara el número de caracteres de cada cadena, indicando, según el resultado: 
+                     La cadena1 es mayor que la cadena2 en x caracteres. 
+                     La cadena1 es menor que la cadena2 en x caracteres.
+                       Las cadenas son iguales y tienen x caracteres. 
+                  - Para calcular el número de caracteres de una cadena utiliza la función strlen():
+                     http://php.net/manual/es/function.strlen.php
+
+
+              Crea el script php_6.php con las siguientes características: 
+            - Añade el siguiente array:
+             $employees = [
+            13 => [
+           'firstname' => 'Carolina',
+           'lastname'  => 'Poveda',
+	'salary'     => 900
+       ],
+            3 => [
+        'firstname' => 'Sebastian',
+         'lastname'  => 'Sanchez',
+	'salary'     => 2700
+              ],
+         42 => [
+         'firstname' => 'Saul',
+         'lastname'  => 'Goodman',
+       'salary'     => 1800
+         ]
+        ];
+        - Utiliza una estructura foreach para mostrar un listado HTML (<ul><li>) con los datos de cada empleado: 
+           Carolina Poveda (ID: 13) tiene un salario de $900.
+           Sebastián Sanchez (ID: 3) tiene un salario de $2700.
+         - Añade un switch para que, en cada iteración, compruebe si el salario del empleado está en los siguientes rangos:
+          menos de 1000 pesos. Añadir el texto: (bajo)
+         más de 1000 y menos de 2000. Añadir el texto: (medio)
+        Más de 2000. Añadir el texto: (alto)
+        Carolina Poveda (ID: 13) tiene un salario de $900 (bajo).
+        Sebastián Sanchez (ID: 3) tiene un salario de $2700 (alto)...
+        Ten en cuenta que en los case del switch, además de números o valores fijos, también podemos incluir condiciones: 
+        case $x < 3:
+        case $x >5 || $y < 35;
+     - Dentro del mismo foreach, calcula quién tiene el salario mayor, e imprímelo a continuación: 
+        Sebastián Sanchez tiene el mayor salario de todos.
+         Editado
+
