@@ -112,8 +112,8 @@
                   - Para calcular el número de caracteres de una cadena utiliza la función strlen():
                      http://php.net/manual/es/function.strlen.php
 
-
-              Crea el script php_6.php con las siguientes características: 
+--------------------------------------------------------------------
+         11)    Crea el script php_6.php con las siguientes características: 
             - Añade el siguiente array:
              $employees = [
             13 => [
@@ -147,4 +147,207 @@
      - Dentro del mismo foreach, calcula quién tiene el salario mayor, e imprímelo a continuación: 
         Sebastián Sanchez tiene el mayor salario de todos.
          Editado
+
+
+-----------------------------------------------------------------------
+    Crea el script php_7.php con las siguientes características: 
+
+- Este script será exclusivamente de PHP, sin etiquetas HTML. Lo usaremos de librería de funciones para la siguiente actividad. 
+
+- Crea la función calculadora() con los siguientes parámetros de entrada: $num1, $num2, $operacion (valor por defecto: suma)
+
+- $operacion permitirá los valores: suma, resta, disivison, multiplicacion, resto. Según el valor introducido (switch), realizará la operación correspondiente. 
+
+- La función devolverá el resultado numérico de la operación. 
+
+- Añade una condición para evitar el error de división por cero (cuando $num2 = 0 y $operacion = "division"). En este caso la función devolverá el valor "ERROR0"
+------------------------------------------
+
+
+
+Crea el script php_8.php con las siguientes características: 
+
+- Incluye el script php_7.php creado en la actividad anterior. 
+
+- Define un array $numeros con los siguientes pares de valores: 
+
+'num1' => 41 y 'num2' => 2.1
+
+'num1' => 3 y 'num2' => 67
+
+'num1' => 145 y 'num2' => 0
+
+- Define un array $operaciones con los nombres de las operaciones: suma, resta, disivison, multiplicacion, resto, y el símbolo correspondiente a cada operación ('suma' => '+', 'resta => '-', etc.). 
+
+- Mediante estructuras de control anidadas, realiza todas las operaciones para todos los pares de valores del array. Imprime el resultado de cada operación de la siguiente forma: 
+
+41 + 2.1 = 43.1
+41 - 2.1 = 38.9
+...
+145 / 0 = Error de división por cero
+- Añade un nuevo par de valores al array $numeros y comprueba que, sin modificar nada del código, el resultado de sus operaciones también se muestra.
+
+
+----------------------------------------
+
+
+Crea el script /php_f1.php con las siguientes características.
+
+Dado el array de cadenas $strings, realiza las siguientes acciones:
+
+$strings = [
+  " Lorem ipsum dolor sit amet, consectetur EnTrenamiento elit, sed do eiusmod tempor incididunt ut",
+  "Sed ut ENTRENAMIENTO unde omnis iste natus error sit voluptatem accusantium doloremque entrenamiento, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae ENTrenamiento dicta sunt explicabo. ",
+  "Phasellus laoreet eu entrenamiento orci et tincidunt. Quisque ac drupal gravida sem, non eleifend erat EntreNAMiento."
+];
+- Nota 1: Ten en cuenta que la cadena tiene 3 elementos, pero el código debe aceptar un número dinámico de elementos.
+
+- Nota 2: Realiza los cambios directamente sobre el array $strings.  
+
+- Calcula e imprime el número de caracteres de cada cadena. Imprime también el total de caracteres. 
+
+- Elimina posibles espacios al principio y final de cada cadena. 
+
+- Calcula e imprime el número de espacios de cada cadena. Imprime también el total de espacios. 
+
+- Sustituye todas las variantes de Entrenamiento (ENTRENAMIENTO, ENtrenamiento, EnTrEnAmiento, etc.) por Entrenamiento. 
+
+- Calcula e imprime el número de veces que aparece la palabra Entrenamiento en cada cadena. Imprime también el total. 
+
+- Reemplaza la palabra Entrenamiento por "<strong>Entrenamiento</strong>", de forma que se muestre en negrita. 
+
+- Recorta todas las cadenas a 100 caracteres (quédate con los primeros 100 caracteres). 
+
+- Por último, imprime las cadenas resultantes, separadas por un salto de línea HTML (<br>).
+
+
+--------------------------------------
+
+
+     revisar tema de expresiones regulares
+
+
+--------------------------------------
+
+Crea el script php_f2.php con las siguientes características. 
+
+Dado el array $numbers, realiza las siguientes operaciones: 
+
+$numbers = [3, 45, 22, 12, 33, 23, 44, 1, 121];
+- Imprime el número de elementos del array. 
+
+- Cuenta e imprime el número de elementos pares y de elementos impares. 
+
+- Ordena los elementos del array en orden ascendente. 
+
+- Crea un array llamado $morenumbers, a partir de la cadena "5:76:7:8". Utiliza las funciones de arrays adecuadas para convertir la cadena en un array de números. 
+
+- Combina los dos arrays, de forma que los números de $numbers queden en primer lugar. Almacena el resultado en el array $numbers. 
+
+- Ordena los elemento del array en orden descendente. 
+
+- Por último, imprime el array $numbers resultante utilizando print_r().
+
+
+----------------------------------------------
+
+Crea el script php_f3.php con las siguientes características.
+
+Dado el array de países $countries, realiza las acciones que se indican: 
+
+$countries = [
+  'uk' => 'United Kingdom',
+  'fr' => 'France',
+  'pt' => 'Portugal',
+  've' => 'Venezuela',
+  'at' => 'Austria',
+  'es' => 'Spain',
+  'co' => 'Colombia'
+];
+- Nota 1: Ten en cuenta que el array tiene que ser tratado de forma dinámica. Si se añaden más países, debe funcionar correctamente.
+
+- Nota 2: Realiza los cambios directamente sobre el array $countries.  
+
+- Comprueba si tu país está en la lista. Si está, imprime la cadena "Mi país de origen es X y está en la lista". Si no está, imprime la cadena: "Mi país de origen es X pero no está en la lista". Sustituye X por el nombre de tu país. 
+
+- Ordena el array en orden alfabético según el nombre del país (y sin perder la relación de claves)
+
+- Imprime el array con print_r().
+
+- Crea e imprime una cadena a partir del array, separando los nombres de países por ", " (coma y espacio). Utiliza las funciones estudiadas en la unidad.
+
+---------------------------------------------------------------------
+
+[1/2 8:31] Carolina Poveda
+ 
+Crea el script php_f4.php con las siguientes características.
+
+Dado el array de fechas $dates, realiza las siguientes acciones:
+
+$dates = [
+  ['day' => 3, 'month' => 12, 'year' => 2005],
+  ['day' => 30, 'month' => 2, 'year' => 2017],
+  ['day' => 7, 'month' => 9, 'year' => 2019],
+  ['day' => 1, 'month' => 11, 'year' => 2014]
+];
+- Nota 1: Ten en cuenta que el array puede tener un número dinámico de elementos.
+
+- Nota 2: Realiza los cambios directamente sobre el array $dates. 
+
+- Recorre el array y comprueba si cada fecha es válida. Si encuentras una fecha no válida, elimínala del array (unset()). 
+
+- Para cada elemento del array, añade un nuevo índice 'timestamp', y asígnale el valor de cada fecha en formato timestamp. Por ejemplo: 
+
+  ['day' => 3, 'month' => 12, 'year' => 2005, 'timestamp' => 1133568000],
+- Añade una nueva entrada al array con la fecha actual, tanto en elementos (day, month, year) como en formato timestamp. La fecha actual se tiene que obtener dinámicamente. 
+- Imprime el array resultante con print_r().  
+-------------------------------------------------------------------------
+
+
+?
+[1/2 8:34] Carolina Poveda
+Con el archivo php_example.log que encontrarás adjunto a esta actividad, y súbelo a la carpeta php, junto al resto de scripts. 
+
+Se trata de un archivo que almacena cadenas con estos valores: 
+
+IP|timestamp|HTTP_USER_AGENT\n
+
+El archivo ya tiene una cadena de ejemplo. 
+
+Al mismo nivel, crea el script php_f5.php, realizando las siguientes acciones:  
+
+- Comprueba que el fichero existe y su tamaño es mayor de 0. Realiza el resto de acciones solo si lo encuentra. Si no, devuelve un error indicando que no se ha podido encontrar el fichero o que el fichero está vacío. 
+
+- Obten los valores actuales de IP, fecha en timestamp y valor de HTTP_USER_AGENT. 
+
+La IP se puede obtener de $_SERVER['REMOTE_ADDR']
+
+El HTTP_USER_AGENT o información del navegador del usuario se puede obtener de $_SERVER['HTTP_USER_AGENT']
+
+- Añade al archivo una nueva línea (con salto de línea al final), con el formato indicado. Imprime una cadena indicando los valores que se han almacenado (sin acceder al contenido del fichero). 
+
+- Accede al script desde el navegador. 
+
+- Accede al script desde otro navegador.
+---------------------------------------------------
+
+Crea el script php_poo_1.php, definiendo la clase Vehicle con las siguientes características.
+
+- Tendrá las siguientes propiedades públicas: $brand (marca), $seats (número de asientos), $fuel_capacity (capacidad de combustible), $license_plate(número de matrícula)
+
+- Tendrá las siguientes propiedades protegidas: $fuel_level (nivel de combustible, 0 por defecto),  $current_speed (velocidad actual, 0 por defecto), $state(estado, 'off' por defecto).
+
+- Declara, en el lugar correspondiente, el espacio de nombres php/Vehicles.
+
+Continua trabajando en el script /php_poo_2.php, ampliando la clase Vehicle creada anteriormente.
+
+- Crea métodos públicos getX() para obtener las propiedades $brand, $seats y $license_plate. Por ejemplo: getBrand().
+
+- Crea métodos públicos setX() para asignar un valor a las propiedades $fuel_level, $current_speed y $state. Por ejemplo: setFuelLevel().
+
+Continua trabajando en el script /php_poo_2.php, ampliando la clase Vehicle creada anteriormente.
+
+- Crea métodos públicos getX() para obtener las propiedades $brand, $seats y $license_plate. Por ejemplo: getBrand().
+
+- Crea métodos públicos setX() para asignar un valor a las propiedades $fuel_level, $current_speed y $state. Por ejemplo: setFuelLevel().
 
