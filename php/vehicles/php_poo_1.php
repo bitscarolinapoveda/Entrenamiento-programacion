@@ -12,7 +12,38 @@ class Vehicle
     protected $currentSpeed = 0;
     protected $state = 'off';
 
+    public function __construct($marca, $nAsientos, $capCombustible, $matricula)
+    {
+        $this->brand = $marca;
+        $this->seats = $nAsientos;
+        $this->fuelCapacity = $capCombustible;
+        $this->licensePlate = $matricula;
+        $this->fuelLevel = 0;
+        $this->currentSpeed = 0;
+        $this->state ='off';
 
+        echo "Se ha registrado el vehiculo de marca " . $this->brand .
+        " con la matricula " .$this->licensePlate . "<br>";
+    }
+
+    public function __destruct()
+    {
+        if ($this->state == "on") {
+            if ($this->fuelLevel != 0) {
+                while ($this->currentSpeed != 0) {
+                    $this->frenar();
+                }
+
+                $this->state = "off";
+
+                echo "Se ha detenido y apagado  el vehiculo con la matricula " .$this->licensePlate . " definitivamente<br>";
+            } else {
+                echo "el auto no tiene combustible tanquea por favor";
+            }
+        } else {
+            echo "el auto no se ha encendido y por ende tampoco se ha podido acelerar";
+        }
+    }
 
     #geters
     public function getBrand()
