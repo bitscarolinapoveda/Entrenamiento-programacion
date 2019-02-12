@@ -6,6 +6,7 @@ class Vehicle
 {
     public $brand = 'BMW x6';
     public $seats;
+    public $type;
     public $fuelCapacity = 100;
     public $licensePlate = 'bits 001';
     protected $fuelLevel = 0;
@@ -30,7 +31,7 @@ class Vehicle
     {
         if ($this->state == "on") {
             if ($this->fuelLevel != 0) {
-                while ($this->currentSpeed != 0) {
+                while ($this->currentSpeed > 0) {
                     $this->frenar();
                 }
 
