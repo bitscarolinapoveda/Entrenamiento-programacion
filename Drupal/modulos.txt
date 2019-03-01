@@ -1,0 +1,36 @@
+     
+
+                  actividad de modulos con drupal desde consola y drush
+
+
+     1 mirar el estado que tiene el modulo Training Drupal 8 con drush
+               drupalDrush pml
+
+        2   Instalar el modulo Training Drupal 8 desde consola
+                   drupalConsole moi training_drupal_8
+
+       3  Usando comandos de Drush, sube e instala el módulo Admin Toolbar (y submódulo Admin Toolbar Tools)
+                  $ composer require drupal/"toolbar_menu"
+                      $ composer require drupal/"admin_toolbar"
+                       drupalDrush en admin_toolbar
+                         
+
+
+     4  Usando comandos de Drupal Console, crear el módulo Training Drupal 8 Console (training_d8_console), con las siguientes características: 
+            . Añadir una descripción, y el grupo BITS.
+            . El módulo dependerá de Pathauto
+             .No crear inicialmente el archivo.module
+             .Generar el módulo y comprobar que se ha generado correctamente.
+             .Usando comandos de Drupal Console: 
+
+                     *   $ drupalConsole gm
+                            $ drupalConsole pml
+
+          5. Usando comandos de Drupal Console:   Añadir el archivo.module al módulo anterior  y Instalar el módulo.
+                        $ drupalConsole gmf training_drupal_8_console
+                        $ drupalConsole moi training_drupal_8_console
+                          
+    
+
+
+         
