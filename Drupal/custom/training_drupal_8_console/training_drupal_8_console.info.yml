@@ -1,0 +1,5 @@
+name: 'Training Drupal 8 Console'
+type: module
+description: 'modulo creado desde consola'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains training_drupal_8_console.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function training_drupal_8_console_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the training_drupal_8_console module.
+    case 'help.page.training_drupal_8_console':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('modulo creado desde consola') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function training_drupal_8_console_theme() {
+  return [
+    'training_drupal_8_console' => [
+      'render element' => 'children',
+    ],
+  ];
+}
