@@ -34,7 +34,7 @@
     <table class="table table-bordered table-hover  ">
         <thead class="bg-dark text-white">
             <tr>
-                <th>Identificdor</th>
+             <th>Identificdor</th>
                 <th>Titulo</th>
                 <th>Director</th>
                 <th>Año</th>
@@ -57,7 +57,7 @@
         <?php   }  ?>
            
             <tr>
-                <td><?php echo $peliculas["z"]["id"] = 500; ?></td>
+                   <td><?php echo $peliculas["z"]["id"] = 500; ?></td>
                 <td><?php echo $peliculas["z"]["titulo"] = "mafalda y sus perros"; ?></td>
                 <td><?php echo $peliculas["z"]["director"] = "lorena castiblanco"; ?></td>
                 <td><?php echo $peliculas["z"]["año"] = "1 a.c."; ?></td>

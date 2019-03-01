@@ -3,12 +3,8 @@ $dates = [
     ['day' => 3, 'month' => 12, 'year' => 2005],
     ['day' => 30, 'month' => 2, 'year' => 2017],
     ['day' => 7, 'month' => 9, 'year' => 2019],
-    ['day' => 1, 'month' => 11, 'year' => 2014]
+    ['day' => 1, 'month' => 11, 'year' => 2014],
 ];
-
-
-
-
 
 $elementArray = count($dates);
 $ban = 0;
@@ -23,7 +19,6 @@ foreach ($dates as $key) {
     }
     $ban++;
 }
-
 
 $fechaActual = date("d/m/Y");
 $fechaActual2 = explode("/", $fechaActual);

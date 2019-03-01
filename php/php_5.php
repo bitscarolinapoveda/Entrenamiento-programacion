@@ -1,7 +1,7 @@
 <?php
 
 $cadena1 = "abcdefghi";
-$cadena2 = "abcdefghi";
+$cadena2 = "abcdefghij";
 
 
 if (strlen($cadena1) > strlen($cadena2)) {

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ *  Contains install and update functions for training drupal 8.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function training_drupal_8_install()
+{
+    //1. aca se crea y si asigna valor a una variable de estado
+    \Drupal::state()->set('training_drupal_8.test', true);
+
+    //2. Creación de un término de taxonomía
+    $term = Term::create(array(
+        'name' => t('Training Drupal 8'),
+        'vid' => 'tags',
+    ));
+    $term->save();
+}
+
+function training_drupal_8_uninstall()
+{
+    \Drupal::state()->delete('training_drupal_8.test');
+}

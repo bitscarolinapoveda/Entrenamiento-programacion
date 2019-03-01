@@ -1,0 +1,7 @@
+training_drupal_8.hello:
+  path: '/training/hello'
+  defaults:
+    _controller: '\Drupal\training_drupal_8\controller\TrainingDrupal8Controller::hello'
+    _title: 'mi  modulo'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Module file for training_drupal_8
+ * este modulo crea una pagina estatica con un msm de welcome
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+/**
+ * Implements hook_help().
+ */
+function training_drupal_8_help($route_name,
+    \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the Forcontu Hello module.
+        case 'help.page.training_drupal_8':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('este es el modulo el cua duraste como 3 dias intentando hacerlo por no leer bien.') . '</p>';
+            return $output;
+        // Help for another path in the Forcontu Hello module.
+        case 'training_drupal_8.hello':
+            $output = '';
+            $output .= '<p>' . t('este es el modulo el cua duraste como 3 dias intentando hacerlo por no leer bien. ') . '</p>';
+            return $output;
+    }
+}

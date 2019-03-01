@@ -1,0 +1,7 @@
+name: Training Drupal 8
+type: module
+description: 'mi primer modulo'
+package: BITS
+core: 8.x
+dependencies:
+  - ctools
