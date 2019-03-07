@@ -1,0 +1,28 @@
+bits_pages.admin:
+  title: 'hola'
+  parent: system.admin
+  route_name: bits_pages.admin_
+  description: 'SCOOBY DOO PAPA'
+  weight: -11
+
+
+
+bits_pages.admin_pages:
+  title: 'halo'
+  parent: bits_pages.admin
+  route_name: bits_pages.admin_pages
+  description: '123456789'
+
+bits_pages.s:
+  title: 'Simple page'
+  description: 'Simple page'
+  route_name: bits_pages.simple
+  parent: bits_pages.admin_pages
+  weight: 1
+
+bits_pages.l:
+  title: 'page of links'
+  description: 'page of links'
+  route_name: bits_pages.li
+  parent: bits_pages.admin_pages
+  weight: 2

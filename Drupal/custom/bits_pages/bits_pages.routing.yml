@@ -1,0 +1,45 @@
+bits_pages.simple:
+  path: "/bits/page"
+  defaults:
+    _controller: '\Drupal\bits_pages\controller\BitsPagesController::hola'
+    _title: "pagina con mensaje simple"
+  requirements:
+    _permission: "access content"
+
+
+bits_pages.calculator:
+  path: "/bits/calculator/{num1}/{num2}"
+  defaults:
+    _controller: '\Drupal\bits_pages\controller\BitsPagesController::calculator'
+    num1: 20
+    num2: 10
+    _title: "matematicas"
+  requirements:
+    _permission: "access content"
+
+
+bits_pages.li:
+  path: "/bits/links"
+  defaults:
+    _controller: '\Drupal\bits_pages\controller\BitsPagesController::links'
+    _title: "mis primeros links"
+  requirements:
+    _permission: "access content"
+
+
+bits_pages.admin_:
+  path: "/admin/bitss"
+  defaults:
+    _controller: '\Drupal\system\controller\SystemController::systemAdminMenuBlockPage'
+    _title: "bits pages"
+  requirements:
+    _access: "TRUE"
+
+
+bits_pages.admin_pages:
+  path: '/admin/bitss/pages'
+  defaults:
+    _controller: '\Drupal\system\controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'BITS PAGES'
+  requirements:
+    _access: "TRUE"
