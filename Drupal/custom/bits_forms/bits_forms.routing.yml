@@ -1,0 +1,7 @@
+bits_form.simple:
+  path: '/bits/form/simple'
+  defaults:
+    _form: '\Drupal\bits_forms\Form\Simple'
+    _title: 'form simple'
+  requirements:
+    _permission: 'access content'

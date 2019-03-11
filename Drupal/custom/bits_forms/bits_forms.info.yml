@@ -1,0 +1,5 @@
+name: Bits Forms
+package: BITS
+description: "modulo de formularios"
+core: 8.x
+type: module

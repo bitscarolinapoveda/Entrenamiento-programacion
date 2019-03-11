@@ -1,0 +1,6 @@
+bits_form.simple:
+  menu_name: main
+  route_name: bits_form.simple
+  title: 'BITS FORM'
+  weight: 2
+  description: 'forms creados por mi'

@@ -1,0 +1,57 @@
+<?php
+/**
+ * Implements hook_schema().
+ */
+
+function bits_forms_schema()
+{
+    $schema['bits_forms_simple'] = array(
+        'description' => 'store simple form data',
+        'fields' => array(
+            'id' => array(
+                'type' => 'serial',
+                'not null' => true,
+                'description' => 'ID autoincrement',
+            ),
+            'title' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => true,
+                'default' => '',
+                'description' => 'title',
+            ),
+            'uid' => array(
+                'type' => 'int',
+                'not null' => true,
+                'unsigned' => true,
+                'default' => 0,
+            ),
+            'username' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => true,
+                'default' => '',
+            ),
+            'email' => array(
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => true,
+            ),
+            'ip' => array(
+                'type' => 'varchar',
+                'length' => 128,
+                'not null' => true,
+                'default' => '',
+                'description' => 'user ip',
+            ),
+            'timestamp' => array(
+                'type' => 'int',
+                'not null' => true,
+                'default' => 0,
+                'description' => 'aca el timestamp dem la fecha',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}
